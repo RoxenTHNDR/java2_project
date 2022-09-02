@@ -39,6 +39,21 @@ public class Version {
 
     }
 
+    public Version(int major, int minor, int path){
+
+        try {
+            if(major < 0 || minor < 0 || path < 0 ){
+                throw new NumberFormatException("Negative Numbers not allowed");
+            }
+            majorNum = major;
+            minorNum = minor;
+            patchNum = path;
+        }
+        catch (Exception e){
+            throw new NumberFormatException("Error occurred while parsing version!");
+        }
+    }
+
     public int getMajor() {
         return majorNum;
     }
