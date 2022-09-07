@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f5a7efe-486b-4eef-8df9-809f306b8b62" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/intro/assignments/VersionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/intro/assignments/Version.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/intro/assignments/Version.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,7 +87,8 @@
       <workItem from="1661793905310" duration="3839000" />
       <workItem from="1661906133672" duration="7816000" />
       <workItem from="1661966518401" duration="5152000" />
-      <workItem from="1662428051931" duration="595000" />
+      <workItem from="1662428051931" duration="684000" />
+      <workItem from="1662504608874" duration="9250000" />
     </task>
     <servers />
   </component>

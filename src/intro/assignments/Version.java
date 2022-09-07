@@ -15,26 +15,29 @@ public class Version {
 
 
     public Version(String oldPatch){
-        String[] versionArr = oldPatch.split(".");
+        String[] versionArr = oldPatch.split("\\.");
         if (versionArr.length == 1 && versionArr[0].equals("")){
+            majorNum = 0;
+            minorNum = 0;
             patchNum = 1;
             return;
         }
         try {
             switch (versionArr.length){
                 case 0: patchNum = 1;
-                        break;
+                    break;
                 case 1: majorNum = Integer.parseInt(versionArr[0]);
-                        break;
+                    break;
                 case 2: majorNum = Integer.parseInt(versionArr[0]);
-                        minorNum = Integer.parseInt(versionArr[1]);
+                    minorNum = Integer.parseInt(versionArr[1]);
+                    break;
                 default: majorNum = Integer.parseInt(versionArr[0]);
-                         minorNum = Integer.parseInt(versionArr[1]);
-                         patchNum = Integer.parseInt(versionArr[2]);
+                    minorNum = Integer.parseInt(versionArr[1]);
+                    patchNum = Integer.parseInt(versionArr[2]);
             }
         }
         catch (Exception e){
-            throw new NumberFormatException("Error occurred while parsing version!");
+            throw new NumberFormatException("Error occured while parsing version!");
         }
 
     }
@@ -50,7 +53,7 @@ public class Version {
             patchNum = path;
         }
         catch (Exception e){
-            throw new NumberFormatException("Error occurred while parsing version!");
+            throw new NumberFormatException("Error occured while parsing version!");
         }
     }
 
