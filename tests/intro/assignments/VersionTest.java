@@ -1,5 +1,7 @@
 package intro.assignments;
 
+import intro.assignments.Version;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 
@@ -10,7 +12,7 @@ class VersionTest {
     @Test
 
     public void introAssignmentCheck(){
-        assertEquals("0.0.1", new Version().toString());
+        Assertions.assertEquals("0.0.1", new Version().toString());
         assertTrue(new Version().toString().equals("0.0.1"));
         assertEquals("1.2.3", new Version("1.2.3").toString());
         assertEquals("1.2.3", new Version("1.2.3.4").toString());
