@@ -9,4 +9,8 @@ This first assignment was creating an object/class, this upcoming one seems like
 a slight challenge. 
 
 ## Test Driven Development (TDD)
-Over the past week we have focused on creating tests for our software. They way we did this was through a test class, that instantiated a object, and then would test the returns of all the public methods within said objects class. What this will allow us to do is make it easier to test specific methods in our code to check if when all goes well that we get what is expected, or when a exception is thrown we get what we expected.
+Over the past week we have focused on creating tests for our software. The way we did this 
+was through a test class, that instantiated an object, and then would test the returns of all the 
+public methods within said objects class. What this will allow us to do is make it easier to 
+test specific methods in our code to check if when all goes well that we get what is expected,
+or when a exception is thrown we get what we expected.
