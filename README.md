@@ -14,3 +14,11 @@ was through a test class, that instantiated an object, and then would test the r
 public methods within said objects class. What this will allow us to do is make it easier to 
 test specific methods in our code to check if when all goes well that we get what is expected,
 or when a exception is thrown we get what we expected.
+
+## Collections
+This week we were mainly focusing on Collections. This mainly was a recap of some matieral we had done in
+the previous JAVA course. However it also added Sets and Maps. One of the excersises I found interesting
+was taking an array list and making it so there was only one of each item within it. To do this in a very
+simple manner, all we had to do was convert the list into a set and then back again, because a set only can
+contain one of each element. Ex: List [1,1,2,2,3,3] -> Set [1,2,3] -> List [1,2,3]. I also found maps interesting
+as they ran similar to a database table in that each entery has a key that it can be found by.
