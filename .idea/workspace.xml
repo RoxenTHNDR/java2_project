@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f5a7efe-486b-4eef-8df9-809f306b8b62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1309/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1310/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1311/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1313/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1313/StringsLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java1refresher/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java1refresher/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java1refresher/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java1refresher/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java1refresher/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java1refresher/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Person.java" afterDir="false" />
-    </list>
+    <list default="true" id="2f5a7efe-486b-4eef-8df9-809f306b8b62" name="Changes" comment="Completed Assignment 2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,8 +155,16 @@
       <workItem from="1662571935065" duration="3900000" />
       <workItem from="1663003253318" duration="2902000" />
       <workItem from="1663176106790" duration="32063000" />
-      <workItem from="1665369609117" duration="3321000" />
+      <workItem from="1665369609117" duration="3731000" />
     </task>
+    <task id="LOCAL-00001" summary="Completed Assignment 2">
+      <created>1665373146047</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665373146047</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,5 +192,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Completed Assignment 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed Assignment 2" />
   </component>
 </project>
