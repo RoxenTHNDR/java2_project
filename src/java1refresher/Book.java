@@ -48,6 +48,14 @@ public class Book implements Comparable<Book>{
         bookCount++;
     }
 
+    public Book(String title) {
+        this.title = title;
+        author  = new Person();
+        read = false;
+        numPages = 1;
+        bookCount++;
+    }
+
     public static int getBookCount() {
         return bookCount;
     }

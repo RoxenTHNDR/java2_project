@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
 
-public class Person implements Comparable<Person> {
+public class Person { // implements Comparable<Person>
     private String firstName;
     private String lastName;
     private int heightInInches;
@@ -27,6 +27,14 @@ public class Person implements Comparable<Person> {
     public Person(String firstName, String lastName) {
         setFirstName(firstName);
         setLastName(lastName);
+        heightInInches = DEFAULT_HEIGHT;
+        weightInPounds = DEFAULT_WEIGHT;
+        dateOfBirth = DEFAULT_DOB;
+    }
+
+    public Person(String firstName) {
+        setFirstName(firstName);
+        lastName = DEFAULT_LAST_NAME;
         heightInInches = DEFAULT_HEIGHT;
         weightInPounds = DEFAULT_WEIGHT;
         dateOfBirth = DEFAULT_DOB;
@@ -93,18 +101,15 @@ public class Person implements Comparable<Person> {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                '}';
+        return firstName + " " + lastName ;
     }
 
-    @Override
-    public int compareTo(Person o) {
-        int result = this.lastName.compareTo(o.lastName);
-        if(result == 0) {
-            result = this.firstName.compareTo(o.firstName);
-        }
-        return result;
-    }
+//    @Override
+//    public int compareTo(Person o) {
+//        int result = this.lastName.compareTo(o.lastName);
+//        if(result == 0) {
+//            result = this.firstName.compareTo(o.firstName);
+//        }
+//        return result;
+//    }
 }
