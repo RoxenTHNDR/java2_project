@@ -22,3 +22,10 @@ was taking an array list and making it so there was only one of each item within
 simple manner, all we had to do was convert the list into a set and then back again, because a set only can
 contain one of each element. Ex: List [1,1,2,2,3,3] -> Set [1,2,3] -> List [1,2,3]. I also found maps interesting
 as they ran similar to a database table in that each entery has a key that it can be found by.
+
+## Contributing to Open Source Projects
+We had started our contributions to Hacktoberfest this week. Being a open source project for the entire class
+over the month of October. I found this actually a bit challenging. Over the summer I had participated in up keep
+and Updating a Discord Bot. However, we had basically done a shared repository (so merge-conflicts were a common
+occurance. At the point of writing this I am planning on getting help from Marc on posting my assignments to the open
+sourse repository.
