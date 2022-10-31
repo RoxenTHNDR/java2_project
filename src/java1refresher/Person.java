@@ -104,12 +104,11 @@ public class Person { // implements Comparable<Person>
         return firstName + " " + lastName ;
     }
 
-//    @Override
-//    public int compareTo(Person o) {
-//        int result = this.lastName.compareTo(o.lastName);
-//        if(result == 0) {
-//            result = this.firstName.compareTo(o.firstName);
-//        }
-//        return result;
-//    }
+    public int compareTo(Person o) {
+        int result = this.lastName.compareTo(o.lastName);
+        if(result == 0) {
+            result = this.firstName.compareTo(o.firstName);
+        }
+        return result;
+    }
 }

@@ -4,7 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f5a7efe-486b-4eef-8df9-809f306b8b62" name="Changes" comment="Completed Assignment 2" />
+    <list default="true" id="2f5a7efe-486b-4eef-8df9-809f306b8b62" name="Changes" comment="Completed Assignment 2">
+      <change afterPath="$PROJECT_DIR$/person.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Assignment4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Banana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Gala.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Gen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/GenericsDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Potato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Root.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Tropical.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/TwoGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Vegetable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/Language.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/UIUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/UserInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_access/MyDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_access/MyDAOFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_access/PersonDAO_CSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_access/PersonDAO_MySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_access/PersonDAO_XML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_handlers/AddPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_handlers/MyDataHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_fr.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java2-Kirkwood.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java2-Kirkwood.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java1refresher/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Person.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +79,10 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -54,8 +90,13 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\smorr\IdeaProjects\Java2-Kirkwood" />
+      <recent name="C:\Users\smorr\IdeaProjects\Java2-Kirkwood\src\main" />
       <recent name="C:\Users\smorr\IdeaProjects\Java2-Kirkwood\src\en\codegym\task\pro\task13" />
       <recent name="C:\Users\smorr\IdeaProjects\Java2-Kirkwood\tests\java1refresher" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="java2_final_project_demo" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="intro.assignments" />
@@ -64,8 +105,11 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="intro.assignments" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="java2_final_project_demo.data_access" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.en.codegym.task.pro.task13.task1311.Solution">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java2-Kirkwood" />
@@ -155,7 +199,13 @@
       <workItem from="1662571935065" duration="3900000" />
       <workItem from="1663003253318" duration="2902000" />
       <workItem from="1663176106790" duration="32063000" />
-      <workItem from="1665369609117" duration="3731000" />
+      <workItem from="1665369609117" duration="4412000" />
+      <workItem from="1665425178468" duration="5133000" />
+      <workItem from="1665969727959" duration="39000" />
+      <workItem from="1666027795593" duration="10738000" />
+      <workItem from="1666755901303" duration="96000" />
+      <workItem from="1666807104998" duration="413000" />
+      <workItem from="1666809295911" duration="1001000" />
     </task>
     <task id="LOCAL-00001" summary="Completed Assignment 2">
       <created>1665373146047</created>
@@ -164,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665373146047</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Completed Assignment 2">
+      <created>1665373381459</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665373381459</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
