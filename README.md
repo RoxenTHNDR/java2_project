@@ -30,7 +30,7 @@ and Updating a Discord Bot. However, we had basically done a shared repository (
 occurance. At the point of writing this I am planning on getting help from Marc on posting my assignments to the open
 sourse repository.
 
-##Generics
+## Generics
 This week we had talked about generics. Being able to create our own objects and inserting data types within said object.
 Such as: `Example<String> exstr = new Example<>;`, creates a new object of type "Example" that contains Strings. Or
 something similar: `Example<int> exint = new Example<>;` creates a new object of type "Example" that contains integers.
