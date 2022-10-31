@@ -29,3 +29,9 @@ over the month of October. I found this actually a bit challenging. Over the sum
 and Updating a Discord Bot. However, we had basically done a shared repository (so merge-conflicts were a common
 occurance. At the point of writing this I am planning on getting help from Marc on posting my assignments to the open
 sourse repository.
+
+##Generics
+This week we had talked about generics. Being able to create our own objects and inserting data types within said object.
+Such as: `Example<String> exstr = new Example<>;`, creates a new object of type "Example" that contains Strings. Or
+something similar: `Example<int> exint = new Example<>;` creates a new object of type "Example" that contains integers.
+I could see myself using this in the case of the discord bot to make it easier to contain players.
