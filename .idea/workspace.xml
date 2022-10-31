@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f5a7efe-486b-4eef-8df9-809f306b8b62" name="Changes" comment="Completed Assignment 2">
-      <change afterPath="$PROJECT_DIR$/person.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/Assignment4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/Banana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/Food.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/Gala.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/Gen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/GenericsDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/Potato.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/Root.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/Tropical.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/TwoGen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/Vegetable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/Language.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/MyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/UIUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/UserInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_access/MyDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_access/MyDAOFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_access/PersonDAO_CSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_access/PersonDAO_MySQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_access/PersonDAO_XML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_handlers/AddPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_handlers/MyDataHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_fr.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java2-Kirkwood.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java2-Kirkwood.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java1refresher/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Person.java" afterDir="false" />
-    </list>
+    <list default="true" id="2f5a7efe-486b-4eef-8df9-809f306b8b62" name="Changes" comment="Catching Repository up to current class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,6 +173,7 @@
       <workItem from="1666755901303" duration="96000" />
       <workItem from="1666807104998" duration="413000" />
       <workItem from="1666809295911" duration="1001000" />
+      <workItem from="1667184667552" duration="367000" />
     </task>
     <task id="LOCAL-00001" summary="Completed Assignment 2">
       <created>1665373146047</created>
@@ -221,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665373381459</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Catching Repository up to current class">
+      <created>1667184711953</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667184711953</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +227,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed Assignment 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed Assignment 2" />
+    <MESSAGE value="Catching Repository up to current class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Catching Repository up to current class" />
   </component>
 </project>
