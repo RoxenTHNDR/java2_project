@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f5a7efe-486b-4eef-8df9-809f306b8b62" name="Changes" comment="Catching Repository up to current class" />
+    <list default="true" id="2f5a7efe-486b-4eef-8df9-809f306b8b62" name="Changes" comment="Catching Repository up to current class">
+      <change afterPath="$PROJECT_DIR$/src/generics/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/PushPop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generics/Assignment4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generics/Assignment4.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +20,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -76,23 +82,23 @@
       <recent name="java2_final_project_demo.data_access" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.en.codegym.task.pro.task13.task1311.Solution">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="Application.Assignment4">
+    <configuration name="Assignment4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generics.Assignment4" />
       <module name="Java2-Kirkwood" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="generics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="en.codegym.task.pro.task13.task1310.Solution" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java2-Kirkwood" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="en.codegym.task.pro.task13.task1310.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Assignment4" />
+        <item itemvalue="Application.en.codegym.task.pro.task13.task1311.Solution" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.VersionTest" />
         <item itemvalue="Application.en.codegym.task.pro.task13.task1313.Solution" />
-        <item itemvalue="Application.en.codegym.task.pro.task13.task1311.Solution" />
-        <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
   </component>
