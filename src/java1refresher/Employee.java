@@ -43,6 +43,4 @@ public class Employee extends Person implements Comparable<Employee>, Cloneable 
             throw new RuntimeException(e);
         }
     }
-
-    // this is testing my commit
 }

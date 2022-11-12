@@ -6,11 +6,15 @@ import java.time.LocalTime;
 import java.time.ZoneId;
 
 public class Person { // implements Comparable<Person>
+
+    private int id;
     private String firstName;
     private String lastName;
     private int heightInInches;
     private double weightInPounds;
     private LocalDateTime dateOfBirth;
+
+    public static final int DEFAULT_ID = 0;
     public static final String DEFAULT_FIRST_NAME = "John";
     public static final String DEFAULT_LAST_NAME = "Doe";
     public static final int DEFAULT_HEIGHT = 0;
@@ -20,11 +24,13 @@ public class Person { // implements Comparable<Person>
             LocalDate.now(ZoneId.of("America/Chicago")), LocalTime.MIDNIGHT).plusDays(1);
     public static final String FIRST_NAME_NO_NUMBER_ERR = "First name cannot contain numbers";
     public static final String FIRST_NAME_EMPTY_ERR = "First name is required.";
+
     public Person() {
         this(DEFAULT_FIRST_NAME, DEFAULT_LAST_NAME);
     }
 
     public Person(String firstName, String lastName) {
+        id = DEFAULT_ID;
         setFirstName(firstName);
         setLastName(lastName);
         heightInInches = DEFAULT_HEIGHT;
@@ -33,6 +39,7 @@ public class Person { // implements Comparable<Person>
     }
 
     public Person(String firstName) {
+        id = DEFAULT_ID;
         setFirstName(firstName);
         lastName = DEFAULT_LAST_NAME;
         heightInInches = DEFAULT_HEIGHT;
@@ -40,7 +47,8 @@ public class Person { // implements Comparable<Person>
         dateOfBirth = DEFAULT_DOB;
     }
 
-    public Person(String firstName, String lastName, int heightInInches, double weightInPounds, LocalDateTime dateOfBirth) {
+    public Person(int id, String firstName, String lastName, int heightInInches, double weightInPounds, LocalDateTime dateOfBirth) {
+        setId(id);
         setFirstName(firstName);
         setLastName(lastName);
         setHeightInInches(heightInInches);
@@ -48,14 +56,23 @@ public class Person { // implements Comparable<Person>
         setDateOfBirth(dateOfBirth);
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        if(id < 0) {
+            throw new IllegalArgumentException("id must be 0 or higher");
+        }
+        this.id = id;
+    }
+
     public String getFirstName() {
         return firstName;
     }
 
     public void setFirstName(String firstName) {
-        if(firstName.matches(".*\\d.*")) {
-            throw new IllegalArgumentException(FIRST_NAME_NO_NUMBER_ERR);
-        } else if(firstName.equals("")) {
+        if(firstName.equals("")) {
             throw new IllegalArgumentException(FIRST_NAME_EMPTY_ERR);
         }
         this.firstName = firstName;
@@ -66,6 +83,9 @@ public class Person { // implements Comparable<Person>
     }
 
     public void setLastName(String lastName) {
+        if(lastName.equals("")) {
+            throw new IllegalArgumentException("Last name required");
+        }
         this.lastName = lastName;
     }
 
@@ -74,8 +94,8 @@ public class Person { // implements Comparable<Person>
     }
 
     public void setHeightInInches(int heightInInches) {
-        if(heightInInches < 0 || heightInInches > 100) {
-            throw new IllegalArgumentException("Height must be between 0 and 100");
+        if(heightInInches < 0) {
+            throw new IllegalArgumentException("Height must be 0 or greater");
         }
         this.heightInInches = heightInInches;
     }
@@ -85,6 +105,9 @@ public class Person { // implements Comparable<Person>
     }
 
     public void setWeightInPounds(double weightInPounds) {
+        if(weightInPounds < 0) {
+            throw new IllegalArgumentException("Weight must be 0 or greater");
+        }
         this.weightInPounds = weightInPounds;
     }
 
@@ -104,11 +127,12 @@ public class Person { // implements Comparable<Person>
         return firstName + " " + lastName ;
     }
 
-    public int compareTo(Person o) {
-        int result = this.lastName.compareTo(o.lastName);
-        if(result == 0) {
-            result = this.firstName.compareTo(o.firstName);
-        }
-        return result;
-    }
+//    @Override
+//    public int compareTo(Person o) {
+//        int result = this.lastName.compareTo(o.lastName);
+//        if(result == 0) {
+//            result = this.firstName.compareTo(o.firstName);
+//        }
+//        return result;
+//    }
 }

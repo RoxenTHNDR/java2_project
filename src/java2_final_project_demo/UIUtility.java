@@ -70,7 +70,6 @@ public class UIUtility {
 
     public static void showErrorMessage(String message, Scanner in, ResourceBundle messages) {
         System.out.println("\n" + messages.getString("error") + ": " + message);
-        pressEnterToContinue(in, messages);
     }
 
     /**

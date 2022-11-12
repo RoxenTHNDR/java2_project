@@ -3,6 +3,9 @@ package java2_final_project_demo;
 import java2_final_project_demo.data_access.MyDAO;
 import java2_final_project_demo.data_access.MyDAOFactory;
 import java2_final_project_demo.data_handlers.AddPerson;
+import java2_final_project_demo.data_handlers.DeletePerson;
+import java2_final_project_demo.data_handlers.GetPerson;
+import java2_final_project_demo.data_handlers.UpdatePerson;
 import java1refresher.Person;
 
 import java.util.ResourceBundle;
@@ -12,6 +15,16 @@ public class Main {
     public static void main(String[] args) {
         String data_source = "csv";
         MyDAO<Person> personDAO = MyDAOFactory.getMyDAO(data_source);
+        if(personDAO == null) {
+            System.out.println("Person data object not found");
+            return;
+        }
+        try {
+            personDAO.readInData();
+        } catch(MyException e) {
+            System.out.println(e.getMessage());
+            return;
+        }
         Language language = new Language();
         ResourceBundle messages = language.getMessages();
         Scanner scanner = new Scanner(System.in);
@@ -28,6 +41,7 @@ public class Main {
             };
             choice = UIUtility.showMenuOptions(menuTitle, prompt, menuOptions, scanner, messages);
             if(choice <= 0 || choice > menuOptions.length + 1) {
+                UIUtility.pressEnterToContinue(scanner, messages);
                 continue;
             }
             if(choice == menuOptions.length + 1) {
@@ -40,13 +54,16 @@ public class Main {
                         new AddPerson().handleTask(personDAO, scanner, messages);
                         break;
                     case 2:
+                        new GetPerson().handleTask(personDAO, scanner, messages);
                         break;
                     case 3:
+                        new UpdatePerson().handleTask(personDAO, scanner, messages);
                         break;
                     case 4:
+                        new DeletePerson().handleTask(personDAO, scanner, messages);
                         break;
                     case 5:
-                        language.setMessages(scanner, messages);
+                        language.setMessages(scanner);
                         messages = language.getMessages();
                         break;
                 }
