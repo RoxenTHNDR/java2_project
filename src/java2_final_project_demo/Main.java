@@ -1,5 +1,6 @@
 package java2_final_project_demo;
 
+import java1refresher.Book;
 import java2_final_project_demo.data_access.MyDAO;
 import java2_final_project_demo.data_access.MyDAOFactory;
 import java2_final_project_demo.data_handlers.AddPerson;
@@ -8,13 +9,16 @@ import java2_final_project_demo.data_handlers.GetPerson;
 import java2_final_project_demo.data_handlers.UpdatePerson;
 import java1refresher.Person;
 
+import java.util.List;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         String data_source = "csv";
-        MyDAO<Person> personDAO = MyDAOFactory.getMyDAO(data_source);
+        List<MyDAO> data_objects = MyDAOFactory.getMyDAO(data_source);
+        MyDAO<Person> personDAO = data_objects.get(0);
+        MyDAO<Book> bookDAO = data_objects.get(1);
         if(personDAO == null) {
             System.out.println("Person data object not found");
             return;
