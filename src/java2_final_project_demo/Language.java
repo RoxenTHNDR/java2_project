@@ -22,8 +22,11 @@ public class Language {
             String menuTitle = messages.getString("languages-available");
             String prompt = messages.getString("select-language");
             String[] menuOptions = {
-                    messages.getString("english"), messages.getString("french")
+                    messages.getString("english"), messages.getString("french"), messages.getString("german")
             };
+
+            System.out.print(menuOptions.length + 1);
+
             choice = UIUtility.showMenuOptions(menuTitle, prompt, menuOptions, scanner, messages);
             if(choice <= 0 || choice > menuOptions.length + 1) {
                 UIUtility.pressEnterToContinue(scanner, messages);
@@ -40,6 +43,11 @@ public class Language {
             }
             else if(choice == 2) {
                 messages = ResourceBundle.getBundle("messages", new Locale("fr", "FR"));
+                System.out.println("\n" + messages.getString("language-changed") + ".");
+                break;
+            }
+            else if(choice == 3) {
+                messages = ResourceBundle.getBundle("messages", new Locale("de", "DE"));
                 System.out.println("\n" + messages.getString("language-changed") + ".");
                 break;
             }
