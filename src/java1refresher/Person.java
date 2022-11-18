@@ -16,7 +16,7 @@ public class Person { // implements Comparable<Person>
 
     public static final int DEFAULT_ID = 0;
     public static final String DEFAULT_FIRST_NAME = "John";
-    public static final String DEFAULT_LAST_NAME = "Doe";
+    public static final String DEFAULT_LAST_NAME = "Morris";
     public static final int DEFAULT_HEIGHT = 0;
     public static final double DEFAULT_WEIGHT = 0;
     public static final LocalDateTime DEFAULT_DOB = LocalDateTime.now();

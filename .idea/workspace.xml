@@ -5,14 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f5a7efe-486b-4eef-8df9-809f306b8b62" name="Changes" comment="Got rid of a Print line">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/csv_files/person.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_access/BookDAO_CSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_handlers/AddBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_handlers/DeleteBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_handlers/GetBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_handlers/UpdateBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/csv_files/book.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java2-Kirkwood.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java2-Kirkwood.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java1refresher/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java1refresher/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java2_final_project_demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java2_final_project_demo/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java2_final_project_demo/data_access/MyDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_access/MyDAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lambda/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lambda/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/messages_de.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_de.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/messages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_fr.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/challenge1/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/challenge1/BookTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +71,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="java2_final_project_demo.data_access" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>

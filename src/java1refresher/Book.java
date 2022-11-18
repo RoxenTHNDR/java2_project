@@ -13,10 +13,12 @@ public class Book implements Comparable<Book>{
     private Person author;
     private boolean read;
     private int numPages;
+    private double unitPrice;
+    private static  LocalDate publishDate;
+    private int bookID;
+    public static final int DEFAULT_BOOKID = 100000000;
     public static final String DEFAULT_TITLE = "Undefined";
-    private static int bookCount = 0;
-    private static  LocalDateTime publishDate;
-    public static final LocalDateTime DEFAULT_PUBLISH_DATE = LocalDateTime.now();
+    public static final LocalDate DEFAULT_PUBLISH_DATE = LocalDate.now();
     public static final LocalDateTime MIDNIGHT_TONIGHT = LocalDateTime.of(
             LocalDate.now(ZoneId.of("America/Chicago")), LocalTime.MIDNIGHT).plusDays(1);
     public static final String NO_EMPTY_TITLE = "The title is required.";
@@ -24,9 +26,10 @@ public class Book implements Comparable<Book>{
     public static final int DEFAULT_PAGES = 1;
     public static final String GREATER_THAN_ZERO = "Pages must be greater than 0.";
     public static final double DEFAULT_UNIT_PRICE = 0.00;
-    private double unitPrice;
     public static final String UNIT_PRICE_OVER_ZERO = "Price must be equal to or less than 0";
     public static final String NO_FUTURE = "Publish date hasn't happened yet?";
+    public static final String VALID_ID = "Please insert a valid ID.";
+    private static int bookCount = 0;
 
     public Book() {
         title = DEFAULT_TITLE;
@@ -35,16 +38,28 @@ public class Book implements Comparable<Book>{
         numPages = DEFAULT_PAGES;
         publishDate = DEFAULT_PUBLISH_DATE;
         unitPrice = DEFAULT_UNIT_PRICE;
+        bookID = DEFAULT_BOOKID;
         bookCount++;
     }
 
-    public Book(String title, Person author, boolean read, int numPages, LocalDateTime date, double price) {
+    public Book( String title, Person author, boolean read, int numPages, LocalDate date, double price) {
         setTitle(title);
         setAuthor(author);
         setRead(read);
         setNumPages(numPages);
         setPublishDate(date);
         setUnitPrice(price);
+        bookCount++;
+    }
+
+    public Book( int id,String title, Person author, boolean read, int numPages, LocalDate date, double price) {
+        setTitle(title);
+        setAuthor(author);
+        setRead(read);
+        setNumPages(numPages);
+        setPublishDate(date);
+        setUnitPrice(price);
+        setBookID(id);
         bookCount++;
     }
 
@@ -90,6 +105,10 @@ public class Book implements Comparable<Book>{
     public void setRead(boolean read) {
         this.read = read;
     }
+
+    public boolean getRead(){
+        return read;
+    }
     public void setNumPages(int numPages) {
         if(numPages < 1 ) {
             throw new IllegalArgumentException(GREATER_THAN_ZERO);
@@ -97,13 +116,25 @@ public class Book implements Comparable<Book>{
             this.numPages = numPages;
         }
     }
+    public void setBookID(int id) {
+        if(id < 100000000){
+            throw new IllegalArgumentException(VALID_ID);
+        }
+        else{
+            bookID = id;
+        }
+    }
 
-    public LocalDateTime getPublishDate() {
+    public int getBookID() {
+        return bookID;
+    }
+
+    public LocalDate getPublishDate() {
         return publishDate;
     }
 
-    public void setPublishDate(LocalDateTime date) {
-        if(date.isAfter(LocalDateTime.now())) {
+    public void setPublishDate(LocalDate date) {
+        if(date.isAfter(LocalDate.now())) {
             throw new IllegalArgumentException(NO_FUTURE);
         }
         publishDate = date;
@@ -121,6 +152,8 @@ public class Book implements Comparable<Book>{
             unitPrice = bigPrice.doubleValue();
         }
     }
+
+
 
     @Override
     public String toString() {

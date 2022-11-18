@@ -5,7 +5,7 @@ import java1refresher.Person;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -80,15 +80,15 @@ public class BookTest {
     void setPublishDate(){
 
         // Good test
-        LocalDateTime yesterday = LocalDateTime.now().minusDays(1);
+        LocalDate yesterday = LocalDate.now().minusDays(1);
         book.setPublishDate(yesterday);
         assertTrue(book.getPublishDate().equals(yesterday));
 
         // Bad tests
-        Exception ex =assertThrows(IllegalArgumentException.class, () -> book.setPublishDate(LocalDateTime.now().plusHours(1)));
+        Exception ex =assertThrows(IllegalArgumentException.class, () -> book.setPublishDate(LocalDate.now().plusDays(1)));
         assertEquals(Book.NO_FUTURE, ex.getMessage());
 
-        assertThrows(IllegalArgumentException.class, () -> book.setPublishDate(LocalDateTime.now().plusDays(1)));
+        assertThrows(IllegalArgumentException.class, () -> book.setPublishDate(LocalDate.now().plusDays(1)));
     }
 
     @Test
@@ -133,8 +133,8 @@ public class BookTest {
 
     @Test
     void TestCompareTo() {
-        Book book1 = new Book("Gone with the wind",new Person("Jules", "Vern"),false,20,LocalDateTime.now().minusYears(50),0.99);
-        Book book2 = new Book("Bible",new Person("Jesus", "Christ"),true,349,LocalDateTime.now().minusYears(1000),5.99);
+        Book book1 = new Book("Gone with the wind",new Person("Jules", "Vern"),false,20,LocalDate.now().minusYears(50),0.99);
+        Book book2 = new Book("Bible",new Person("Jesus", "Christ"),true,349, LocalDate.now().minusYears(1000),5.99);
         assertTrue(book.compareTo(book2) < 0);
         assertTrue(book.compareTo(book1) < 0);
         assertTrue(book.compareTo(book) == 0);

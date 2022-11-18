@@ -16,7 +16,7 @@ public class MyDAOFactory {
         switch(dao_source.toUpperCase()) {
             case "CSV":
                 person_dao = new PersonDAO_CSV();
-                //                book_dao = new BookDAO_CSV();
+                book_dao = new BookDAO_CSV();
                 break;
             case "XML":
                 person_dao = new PersonDAO_XML();

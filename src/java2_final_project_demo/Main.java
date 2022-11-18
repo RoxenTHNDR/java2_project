@@ -3,10 +3,7 @@ package java2_final_project_demo;
 import java1refresher.Book;
 import java2_final_project_demo.data_access.MyDAO;
 import java2_final_project_demo.data_access.MyDAOFactory;
-import java2_final_project_demo.data_handlers.AddPerson;
-import java2_final_project_demo.data_handlers.DeletePerson;
-import java2_final_project_demo.data_handlers.GetPerson;
-import java2_final_project_demo.data_handlers.UpdatePerson;
+import java2_final_project_demo.data_handlers.*;
 import java1refresher.Person;
 
 import java.util.List;
@@ -25,6 +22,7 @@ public class Main {
         }
         try {
             personDAO.readInData();
+            bookDAO.readInData();
         } catch(MyException e) {
             System.out.println(e.getMessage());
             return;
@@ -41,7 +39,12 @@ public class Main {
                     , messages.getString("get-person")
                     , messages.getString("update-person")
                     , messages.getString("delete-person")
+                    , messages.getString("add-book")
+                    , messages.getString("get-book")
+                    , messages.getString("update-book")
+                    , messages.getString("delete-book")
                     , messages.getString("change-language")
+
             };
             choice = UIUtility.showMenuOptions(menuTitle, prompt, menuOptions, scanner, messages);
             if(choice <= 0 || choice > menuOptions.length + 1) {
@@ -67,6 +70,18 @@ public class Main {
                         new DeletePerson().handleTask(personDAO, scanner, messages);
                         break;
                     case 5:
+                        new AddBook().handleTask(bookDAO,scanner,messages);
+                        break;
+                    case 6:
+                        new GetBook().handleTask(bookDAO,scanner,messages);
+                        break;
+                    case 7:
+                        new UpdateBook().handleTask(bookDAO,scanner,messages);
+                        break;
+                    case 8:
+                        new DeleteBook().handleTask(bookDAO,scanner,messages);
+                        break;
+                    case 9:
                         language.setMessages(scanner);
                         messages = language.getMessages();
                         break;
