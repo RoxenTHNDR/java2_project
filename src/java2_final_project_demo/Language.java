@@ -15,7 +15,7 @@ public class Language {
         return messages;
     }
 
-    public void setMessages(Scanner scanner, ResourceBundle messages) {
+    public void setMessages(Scanner scanner) {
 
         int choice = 0;
         while(true) {
@@ -25,10 +25,9 @@ public class Language {
                     messages.getString("english"), messages.getString("french"), messages.getString("german")
             };
 
-            System.out.print(menuOptions.length + 1);
-
             choice = UIUtility.showMenuOptions(menuTitle, prompt, menuOptions, scanner, messages);
             if(choice <= 0 || choice > menuOptions.length + 1) {
+                UIUtility.pressEnterToContinue(scanner, messages);
                 continue;
             }
             else if(choice == menuOptions.length + 1) {

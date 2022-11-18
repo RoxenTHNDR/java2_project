@@ -1,6 +1,6 @@
 package java2_final_project_demo;
 
-public class MyException extends Exception{
+public class MyException extends Exception {
     public MyException() {
         super();
     }

@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f5a7efe-486b-4eef-8df9-809f306b8b62" name="Changes" comment="Completed Assignment 4">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_de.properties" afterDir="false" />
+    <list default="true" id="2f5a7efe-486b-4eef-8df9-809f306b8b62" name="Changes" comment="Got rid of a Print line">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/csv_files/person.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java2_final_project_demo/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java2_final_project_demo/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java2_final_project_demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java2_final_project_demo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java2_final_project_demo/data_access/MyDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java2_final_project_demo/data_access/MyDAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lambda/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lambda/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages_de.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_de.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_fr.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,33 +40,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/roxen/IdeaProjects/java2_project/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\roxen\IdeaProjects\java2_project\src\main\resources" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -76,6 +76,7 @@
       <recent name="java2_final_project_demo" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="java2_final_project_demo" />
       <recent name="intro.assignments" />
       <recent name="java1refresher" />
     </key>
@@ -87,19 +88,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.java2_final_project_demo.Main">
-    <configuration name="Assignment4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="generics.Assignment4" />
-      <module name="Java2-Kirkwood" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="generics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java2-Kirkwood" />
@@ -113,6 +101,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="en.codegym.task.pro.task13.task1311.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="en.codegym.task.pro.task13.task1313.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="en.codegym.task.pro.task13.task1313.Solution" />
+      <module name="Java2-Kirkwood" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="en.codegym.task.pro.task13.task1313.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,10 +152,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.java2_final_project_demo.Main" />
-        <item itemvalue="Application.Assignment4" />
         <item itemvalue="Application.en.codegym.task.pro.task13.task1311.Solution" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.VersionTest" />
+        <item itemvalue="Application.en.codegym.task.pro.task13.task1313.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -183,8 +184,8 @@
       <workItem from="1666755901303" duration="96000" />
       <workItem from="1666807104998" duration="413000" />
       <workItem from="1666809295911" duration="1001000" />
-      <workItem from="1667184667552" duration="367000" />
-      <workItem from="1668229614423" duration="2164000" />
+      <workItem from="1667184667552" duration="2186000" />
+      <workItem from="1667845552968" duration="6113000" />
     </task>
     <task id="LOCAL-00001" summary="Completed Assignment 2">
       <created>1665373146047</created>
@@ -207,14 +208,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667184711953</updated>
     </task>
-    <task id="LOCAL-00004" summary="Completed Assignment 4">
-      <created>1667186901214</created>
+    <task id="LOCAL-00004" summary="Catching Repository up to current class">
+      <created>1667185047061</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1667186901215</updated>
+      <updated>1667185047061</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Catching Up to the class">
+      <created>1668225377781</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668225377781</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Got rid of a Print line">
+      <created>1668450058878</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668450058878</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +261,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed Assignment 2" />
     <MESSAGE value="Catching Repository up to current class" />
-    <MESSAGE value="Completed Assignment 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed Assignment 4" />
+    <MESSAGE value="Catching Up to the class" />
+    <MESSAGE value="Got rid of a Print line" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got rid of a Print line" />
   </component>
 </project>
