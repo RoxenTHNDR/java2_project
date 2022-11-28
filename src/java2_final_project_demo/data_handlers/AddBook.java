@@ -9,6 +9,7 @@ import java2_final_project_demo.data_access.MyDAO;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
@@ -39,11 +40,9 @@ public class AddBook implements MyDataHandler{
         }
         for(;;) {
             try {
-                Person author = new Person();
-                String userInFirst = UserInput.getString(messages.getString("enter-author-first"), scanner);
-                String userInLast = UserInput.getString(messages.getString("enter-author-last"), scanner);
-                author.setLastName(userInLast);
-                author.setFirstName(userInFirst);
+                String userInFirst = UserInput.getString(messages.getString("enter-author"), scanner);
+                String[] name = userInFirst.split(" ");
+                Person author = new Person(name[0],name[1]);
                 book.setAuthor(author);
                 break;
             } catch(IllegalArgumentException e) {
@@ -52,7 +51,8 @@ public class AddBook implements MyDataHandler{
         }
         for(;;) {
             try {
-                String userIn = UserInput.getString(messages.getString("enter-read"), scanner);
+                String[] answers = new String[]{"yes", "Yes", "no","No"};
+                String userIn = UserInput.validateString(messages.getString("enter-read"), answers,scanner,messages);
                 Boolean read = Boolean.parseBoolean(userIn);
                 book.setRead(read);
                 break;

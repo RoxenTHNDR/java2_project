@@ -32,7 +32,7 @@ public class DeleteBook implements MyDataHandler{
             }
             Book book = list.get(choice - 1);
             if(data_source.remove(book)) {
-                System.out.println("Person deleted");
+                System.out.println("Book deleted");
             } else {
                 System.out.println("Delete function failed");
             }

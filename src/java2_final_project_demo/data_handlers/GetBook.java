@@ -28,27 +28,19 @@ public class GetBook implements MyDataHandler{
         } catch(NumberFormatException e1){
             // Search by publish
             try{
-                DateTimeFormatter formatterInput = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-                LocalDate dateOfBirth = LocalDate.parse(userIn, formatterInput);
-                List<Book> list = (List<Book>)data_source.get(dateOfBirth);
-                if(list.size() == 0) {
-                    System.out.println("No book found with birth date '" + dateOfBirth + "'.");
-                } else {
-                    System.out.println("\nRetrieved:");
-                    for(Book book: list) {
-                        System.out.println(book);
-                    }
-                }
-            } catch(DateTimeParseException e2){
-                // Search by title
                 List<Book> list = (List<Book>)data_source.get(userIn);
                 if(list.size() == 0) {
-                    System.out.println("No book found with first or last name containing '" + userIn +"'.");
+                    System.out.println("No book found: '" + userIn +"'.");
                 } else {
                     System.out.println("Retrieved:");
                     for(Book book: list) {
                         System.out.println(book);
                     }
+                }
+            } catch(Exception e2){
+                List<Book> list = (List<Book>)data_source.get(userIn);
+                if(list.size() == 0) {
+                    System.out.println("No book foundHell: '" + userIn +"'.");
                 }
             }
         }
