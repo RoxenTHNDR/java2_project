@@ -35,3 +35,11 @@ This week we had talked about generics. Being able to create our own objects and
 Such as: `Example<String> exstr = new Example<>;`, creates a new object of type "Example" that contains Strings. Or
 something similar: `Example<int> exint = new Example<>;` creates a new object of type "Example" that contains integers.
 I could see myself using this in the case of the discord bot to make it easier to contain players.
+
+## Lambda Functions
+Lambda functions were a bit of a challenge for me up until this week. In java one I had realized that they may save time within writing
+the actual code, however I felt as if they were less readable. Now that we took a deeper dive into how to write them and how they work 
+with specific functional interfaces it makes much more sense to me. I also liked how in this week we took a more of deeper dive into reading 
+documentation. Such as with the codewars assignment we worked on, where it challenged us to use a functional interface similar to that of a function
+functional interface, but without using that specific interface. So that brought me to the documentation to figure out which interface uses the
+`.applyAsDouble(T)` abstract method. Which lead me to the ToDoubleFunction Functional interface.
